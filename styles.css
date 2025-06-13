@@ -246,6 +246,7 @@ html {
 
 .hero-description p {
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .cta-button {
@@ -762,10 +763,20 @@ html {
 
 .photography-slider {
     margin-top: 2rem;
+    cursor: grab;
+}
+
+.photography-slider:active {
+    cursor: grabbing;
 }
 
 .photography-swiper {
     padding-bottom: 60px;
+    cursor: grab;
+}
+
+.photography-swiper:active {
+    cursor: grabbing;
 }
 
 .photography-swiper .gallery-img {
