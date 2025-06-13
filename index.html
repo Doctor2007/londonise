@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed vs. Sense: The Hidden Logic of Cyclist Routes</title>
+
+    <!-- Performance optimizations -->
+    <meta name="theme-color" content="#333">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+
+    <!-- Resource hints for critical images -->
+    <link rel="preload" href="images/first_block_bg/IMG_8507.JPG" as="image" importance="high">
+    <link rel="prefetch" href="images/whitecapel/IMG_8423.JPG" as="image">
+    <link rel="prefetch" href="images/canal/IMG_8567.JPG" as="image">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-title">Speed vs. Sense</h1>
+
+            <!-- Hamburger Menu Button -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <!-- Navigation Menu -->
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#gallery-selection" class="nav-link">Gallery</a></li>
+                <li><a href="#superhighway" class="nav-link">Superhighway</a></li>
+                <li><a href="#canal" class="nav-link">Canal</a></li>
+                <li><a href="#methodology" class="nav-link">Methodology</a></li>
+                <li><a href="#photography" class="nav-link">Photography</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Speed vs. Sense: The Hidden Logic of Cyclist Routes</h1>
+            <p class="hero-subtitle">A visual exploration of cyclist route choices in London</p>
+            <div class="hero-description">
+                <p>In the complex urban landscape of London, cyclists face a fundamental choice: the fastest route or
+                    the most pleasant one. This study examines two contrasting cycling routes through East London,
+                    revealing the hidden logic behind cyclist route preferences through photographic documentation.</p>
+                <p>Through comparative analysis of the Whitechapel Road Superhighway and the scenic Regent's Canal
+                    route, we explore how infrastructure, environment, and urban design influence cyclist behavior and
+                    route selection between speed-optimized and sense-optimized pathways.</p>
+            </div>
+            <button class="cta-button" onclick="scrollToSection('gallery-selection')">Explore Routes</button>
+        </div>
+    </section>
+
+    <!-- Gallery Section with Tabs -->
+    <section id="gallery-selection" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Route Gallery</h2>
+
+            <div class="gallery-tabs">
+                <button class="tab-button active" data-tab="fast-route">Fast Route Choice</button>
+                <button class="tab-button" data-tab="ideal-route">Ideal Route Choice</button>
+            </div>
+
+            <div class="gallery-content">
+                <!-- Fast Route Choice Slider -->
+                <div class="gallery-slider active" id="fast-route">
+                    <div class="swiper fast-route-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" data-title="Express Cycle Lane">
+                                <img src="images/whitecapel/IMG_8423.JPG" alt="Fast Route 1" class="gallery-img">
+                                <div class="slide-title">Express Cycle Lane</div>
+                            </div>
+                            <div class="swiper-slide" data-title="Traffic Separation">
+                                <img src="images/whitecapel/IMG_8441.JPG" alt="Fast Route 2" class="gallery-img">
+                                <div class="slide-title">Traffic Separation</div>
+                            </div>
+                            <div class="swiper-slide" data-title="Direct Route">
+                                <img src="images/whitecapel/IMG_8462.JPG" alt="Fast Route 3" class="gallery-img">
+                                <div class="slide-title">Direct Route</div>
+                            </div>
+                            <div class="swiper-slide" data-title="Efficient Transit">
+                                <img src="images/whitecapel/IMG_8517.JPG" alt="Fast Route 4" class="gallery-img">
+                                <div class="slide-title">Efficient Transit</div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+
+                <!-- Ideal Route Choice Slider -->
+                <div class="gallery-slider" id="ideal-route">
+                    <div class="swiper ideal-route-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" data-title="Scenic Waterway">
+                                <img src="images/canal/IMG_8567.JPG" alt="Ideal Route 1" class="gallery-img">
+                                <div class="slide-title">Scenic Waterway</div>
+                            </div>
+                            <div class="swiper-slide" data-title="Nature Path">
+                                <img src="images/canal/IMG_8569.JPG" alt="Ideal Route 2" class="gallery-img">
+                                <div class="slide-title">Nature Path</div>
+                            </div>
+                            <div class="swiper-slide" data-title="Peaceful Journey">
+                                <img src="images/canal/IMG_8573.JPG" alt="Ideal Route 3" class="gallery-img">
+                                <div class="slide-title">Peaceful Journey</div>
+                            </div>
+                            <div class="swiper-slide" data-title="Green Experience">
+                                <img src="images/canal/IMG_8610.JPG" alt="Ideal Route 4" class="gallery-img">
+                                <div class="slide-title">Green Experience</div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Superhighway Route Section -->
+    <section id="superhighway" class="route-section">
+        <div class="section-header">
+            <h2 class="section-title">Whitechapel Road Superhighway</h2>
+            <p class="section-subtitle">Aldgate East to Mile End</p>
+            <p class="route-description">The speed-optimized route: a dedicated cycling superhighway designed for
+                efficient urban transport through one of London's busiest corridors.</p>
+        </div>
+
+        <div class="gallery-container">
+            <div class="gallery superhighway-gallery" id="superhighway-gallery">
+                <div class="gallery-item" data-image="images/whitecapel/IMG_8423.JPG"
+                    data-title="Aldgate East Station Exit">
+                    <img src="images/whitecapel/IMG_8423.JPG" alt="Superhighway 1" loading="lazy">
+                    <div class="overlay"></div>
+                    <div class="photo-title">Aldgate East Station Exit</div>
+                </div>
+                <div class="gallery-item" data-image="images/whitecapel/IMG_8441.JPG"
+                    data-title="Blue Cycle Superhighway">
+                    <img src="images/whitecapel/IMG_8441.JPG" alt="Superhighway 2" loading="lazy">
+                    <div class="overlay"></div>
+                    <div class="photo-title">Blue Cycle Superhighway</div>
+                </div>
+                <div class="gallery-item" data-image="images/whitecapel/IMG_8462.JPG"
+                    data-title="Whitechapel Road Traffic">
+                    <img src="images/whitecapel/IMG_8462.JPG" alt="Superhighway 3" loading="lazy">
+                    <div class="overlay"></div>
+                    <div class="photo-title">Whitechapel Road Traffic</div>
+                </div>
+                <div class="gallery-item" data-image="images/whitecapel/IMG_8517.JPG"
+                    data-title="Dedicated Cycling Lane">
+                    <img src="images/whitecapel/IMG_8517.JPG" alt="Superhighway 4" loading="lazy">
+                    <div class="overlay"></div>
+                    <div class="photo-title">Dedicated Cycling Lane</div>
+                </div>
+                <div class="gallery-item" data-image="images/whitecapel/IMG_8527.JPG" data-title="Urban Infrastructure">
+                    <img src="images/whitecapel/IMG_8527.JPG" alt="Superhighway 5" loading="lazy">
+                    <div class="overlay"></div>
+                    <div class="photo-title">Urban Infrastructure</div>
+                </div>
+                <div class="gallery-item" data-image="images/whitecapel/IMG_8531.JPG" data-title="Commercial District">
+                    <img src="images/whitecapel/IMG_8531.JPG" alt="Superhighway 6" loading="lazy">
+                    <div class="overlay"></div>
+                    <div class="photo-title">Commercial District</div>
+                </div>
+                <div class="gallery-item" data-image="images/whitecapel/IMG_8535.JPG" data-title="Bus Lane Integration">
+                    <img src="images/whitecapel/IMG_8535.JPG" alt="Superhighway 7" loading="lazy">
+                    <div class="overlay"></div>
+                    <div class="photo-title">Bus Lane Integration</div>
+                </div>
+                <div class="gallery-item" data-image="images/whitecapel/IMG_8549.JPG" data-title="Road Infrastructure">
+                    <img src="images/whitecapel/IMG_8549.JPG" alt="Superhighway 8" loading="lazy">
+                    <div class="overlay"></div>
+                    <div class="photo-title">Road Infrastructure</div>
+                </div>
+                <div class="gallery-item" data-image="images/whitecapel/IMG_8731.JPG" data-title="Cycling Path Detail">
+                    <img src="images/whitecapel/IMG_8731.JPG" alt="Superhighway 9" loading="lazy">
+                    <div class="overlay"></div>
+                    <div class="photo-title">Cycling Path Detail</div>
+                </div>
+                <div class="gallery-item" data-image="images/whitecapel/IMG_8744.JPG" data-title="Urban Landscape">
+                    <img src="images/whitecapel/IMG_8744.JPG" alt="Superhighway 10" loading="lazy">
+                    <div class="overlay"></div>
+                    <div class="photo-title">Urban Landscape</div>
+                </div>
+                <div class="gallery-item" data-image="images/whitecapel/IMG_8755.JPG" data-title="Traffic Integration">
+                    <img src="images/whitecapel/IMG_8755.JPG" alt="Superhighway 11" loading="lazy">
+                    <div class="overlay"></div>
+                    <div class="photo-title">Traffic Integration</div>
+                </div>
+                <div class="gallery-item" data-image="images/whitecapel/IMG_8757.JPG" data-title="Mile End Approach">
+                    <img src="images/whitecapel/IMG_8757.JPG" alt="Superhighway 12" loading="lazy">
+                    <div class="overlay"></div>
+                    <div class="photo-title">Mile End Approach</div>
+                </div>
+                <div class="gallery-item" data-image="images/whitecapel/IMG_8762.JPG" data-title="Destination Arrival">
+                    <img src="images/whitecapel/IMG_8762.JPG" alt="Superhighway 13" loading="lazy">
+                    <div class="overlay"></div>
+                    <div class="photo-title">Destination Arrival</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Canal Route Section -->
+    <section id="canal" class="route-section canal-section">
+        <div class="section-header">
+            <h2 class="section-title">Regent's Canal Route</h2>
+            <p class="section-subtitle">Mile End to Victoria Park via Regent's Canal</p>
+            <p class="route-description">The sense-optimized route: a scenic pathway that prioritizes environmental
+                quality and cycling experience over pure efficiency.</p>
+        </div>
+
+        <div class="gallery-container">
+            <div class="gallery canal-gallery" id="canal-gallery">
+                <div class="gallery-item" data-image="images/canal/IMG_8567.JPG" data-title="Mile End Lock">
+                    <img src="images/canal/IMG_8567.JPG" alt="Canal 1" loading="lazy">
+                    <div class="overlay"></div>
+                    <div class="photo-title">Mile End Lock</div>
+                </div>
+                <div class="gallery-item" data-image="images/canal/IMG_8569.JPG" data-title="Peaceful Waterway">
+                    <img src="images/canal/IMG_8569.JPG" alt="Canal 2" loading="lazy">
+                    <div class="overlay"></div>
+                    <div class="photo-title">Peaceful Waterway</div>
+                </div>
+                <div class="gallery-item" data-image="images/canal/IMG_8573.JPG" data-title="Towpath Cycling">
+                    <img src="images/canal/IMG_8573.JPG" alt="Canal 3" loading="lazy">
+                    <div class="overlay"></div>
+                    <div class="photo-title">Towpath Cycling</div>
+                </div>
+                <div class="gallery-item" data-image="images/canal/IMG_8610.JPG" data-title="Green Corridor">
+                    <img src="images/canal/IMG_8610.JPG" alt="Canal 4" loading="lazy">
+                    <div class="overlay"></div>
+                    <div class="photo-title">Green Corridor</div>
+                </div>
+                <div class="gallery-item" data-image="images/canal/IMG_8630.JPG" data-title="Historic Bridges">
+                    <img src="images/canal/IMG_8630.JPG" alt="Canal 5" loading="lazy">
+                    <div class="overlay"></div>
+                    <div class="photo-title">Historic Bridges</div>
+                </div>
+                <div class="gallery-item" data-image="images/canal/IMG_8633.JPG" data-title="Wildlife Haven">
+                    <img src="images/canal/IMG_8633.JPG" alt="Canal 6" loading="lazy">
+                    <div class="overlay"></div>
+                    <div class="photo-title">Wildlife Haven</div>
+                </div>
+                <div class="gallery-item" data-image="images/canal/IMG_8661.JPG" data-title="Narrowboat Life">
+                    <img src="images/canal/IMG_8661.JPG" alt="Canal 7" loading="lazy">
+                    <div class="overlay"></div>
+                    <div class="photo-title">Narrowboat Life</div>
+                </div>
+                <div class="gallery-item" data-image="images/canal/IMG_8664.JPG" data-title="Victoria Park Entrance">
+                    <img src="images/canal/IMG_8664.JPG" alt="Canal 8" loading="lazy">
+                    <div class="overlay"></div>
+                    <div class="photo-title">Victoria Park Entrance</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img id="lightbox-image" src="" alt="">
+            <div class="lightbox-nav">
+                <button id="prev-btn" class="nav-btn">&larr;</button>
+                <button id="next-btn" class="nav-btn">&rarr;</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Lightbox -->
+    <div class="gallery-lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-img" src="" alt="Lightbox Image">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- Research Methodology Section -->
+    <section id="methodology" class="methodology-section">
+        <div class="methodology-container">
+            <div class="section-header">
+                <h2 class="section-title">Research Methodology & Future Development</h2>
+                <p class="section-subtitle">Photographic Documentation as Cultural Probe</p>
+            </div>
+
+            <div class="methodology-content">
+                <div class="methodology-grid">
+                    <div class="methodology-card">
+                        <h3 class="card-title">Exploratory Hypothesis</h3>
+                        <p class="card-text">
+                            This photographic exploration suggests that cyclist route choice is fundamentally driven by
+                            a
+                            dichotomy between <strong>efficiency optimization</strong> and <strong>experiential
+                                quality</strong>.
+                            The visual documentation reveals distinct environmental affordances: the superhighway
+                            prioritizes
+                            speed and directness through dedicated infrastructure, while the canal route emphasizes
+                            sensory
+                            richness and environmental quality despite longer journey times.
+                        </p>
+                        <p class="card-text">
+                            The hypothesis emerges that urban cyclists navigate a constant negotiation between temporal
+                            efficiency and embodied experience, with route selection serving as a manifestation of
+                            broader
+                            life priorities and urban relationship patterns.
+                        </p>
+                    </div>
+
+                    <div class="methodology-card">
+                        <h3 class="card-title">Methodological Biases</h3>
+                        <p class="card-text">
+                            This preliminary study acknowledges several inherent biases that must be addressed in future
+                            research:
+                        </p>
+                        <ul class="bias-list">
+                            <li><strong>Confirmation Bias:</strong> The photographer's preconceptions about route
+                                differences
+                                may influence image selection and framing, potentially reinforcing expected contrasts
+                            </li>
+                            <li><strong>Temporal Sampling:</strong> Documentation occurred during specific weather and
+                                time
+                                conditions, potentially missing seasonal or daily variations in route experience</li>
+                            <li><strong>Subjective Curation:</strong> The selection of 9 representative images per route
+                                inherently involves subjective editorial decisions</li>
+                            <li><strong>Observer Effect:</strong> The presence of a photographer may alter the natural
+                                cycling environment and user behavior</li>
+                        </ul>
+                    </div>
+
+                    <div class="methodology-card">
+                        <h3 class="card-title">Data Limitations</h3>
+                        <p class="card-text">
+                            Current limitations include a <strong>small sample size</strong> (two routes, single
+                            observer)
+                            and limited temporal scope. The photographic method captures environmental qualities but
+                            lacks
+                            quantitative metrics of actual cyclist behavior, journey times, or user experience data.
+                        </p>
+                        <p class="card-text">
+                            Geographic specificity to East London limits generalizability to other urban contexts with
+                            different infrastructure, topography, or cultural cycling practices.
+                        </p>
+                    </div>
+
+                    <div class="methodology-card">
+                        <h3 class="card-title">Cultural Probes Development</h3>
+                        <p class="card-text">
+                            This photographic documentation demonstrates potential as a <strong>cultural probe</strong>
+                            within
+                            ethnographic research frameworks. Future development could expand this method through:
+                        </p>
+                        <ul class="development-list">
+                            <li><strong>Participatory Photography:</strong> Equipping cyclists with cameras to document
+                                their own route experiences and decision-making moments</li>
+                            <li><strong>Multi-sensory Documentation:</strong> Incorporating audio recordings, air
+                                quality
+                                measurements, and cyclist physiological data</li>
+                            <li><strong>Longitudinal Studies:</strong> Tracking route preferences across seasons,
+                                weather
+                                patterns, and life stage changes</li>
+                            <li><strong>Comparative Urban Analysis:</strong> Applying the methodology across different
+                                cities to understand cultural and infrastructural variations</li>
+                        </ul>
+                    </div>
+
+                    <div class="methodology-card">
+                        <h3 class="card-title">Future Research Directions</h3>
+                        <p class="card-text">
+                            To mitigate current limitations, future research should incorporate:
+                        </p>
+                        <ul class="future-list">
+                            <li><strong>Mixed Methods:</strong> Combining photographic documentation with GPS tracking,
+                                time-diary studies, and in-depth interviews</li>
+                            <li><strong>Larger Sample Size:</strong> Documenting multiple route pairs across diverse
+                                urban contexts and cyclist demographics</li>
+                            <li><strong>Collaborative Documentation:</strong> Involving local cycling communities in
+                                co-creating visual narratives of their route experiences</li>
+                            <li><strong>Digital Integration:</strong> Developing interactive platforms where cyclists
+                                can contribute their own photographic documentation and route stories</li>
+                            <li><strong>Policy Application:</strong> Translating visual insights into actionable
+                                recommendations for urban planning and cycling infrastructure development</li>
+                        </ul>
+                    </div>
+
+                    <div class="methodology-card">
+                        <h3 class="card-title">Ethnographic Value</h3>
+                        <p class="card-text">
+                            Photography as cultural probe offers unique advantages for understanding embodied urban
+                            experience.
+                            Visual documentation captures tacit environmental qualities that surveys or interviews might
+                            miss,
+                            while remaining accessible to diverse audiences including policymakers, urban planners, and
+                            cycling advocates.
+                        </p>
+                        <p class="card-text">
+                            This method bridges academic research and public engagement, creating compelling narratives
+                            that can influence urban design decisions and cycling infrastructure investments.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Research Engagement Call-to-Action -->
+                <div class="research-engagement">
+                    <div class="engagement-content">
+                        <h3 class="engagement-title">Expanding the Research</h3>
+                        <p class="engagement-text">
+                            This photographic exploration represents the beginning of a larger investigation into urban
+                            cycling behavior.
+                            Future phases will incorporate participant photography, GPS tracking, and collaborative
+                            documentation
+                            with London's cycling communities.
+                        </p>
+                        <p class="engagement-text">
+                            <strong>Interested in contributing?</strong> Cyclists, urban planners, and researchers are
+                            invited to
+                            participate in expanding this methodology through collaborative documentation projects and
+                            ethnographic studies.
+                        </p>
+                        <div class="engagement-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">2</span>
+                                <span class="stat-label">Routes Documented</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">18</span>
+                                <span class="stat-label">Photographs Analyzed</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">1</span>
+                                <span class="stat-label">Methodology Developed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Photography Gallery Section -->
+    <section id="photography" class="photography-gallery-section">
+        <div class="container">
+            <h2 class="section-title">London Cycling Photography</h2>
+            <p class="section-subtitle">Additional perspectives on urban cycling in London</p>
+
+            <div class="photography-slider">
+                <div class="swiper photography-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" data-title="Urban Architecture">
+                            <img src="images/other/IMG_8363.JPG" alt="London Cycling 1" class="gallery-img">
+                            <div class="slide-title">Urban Architecture</div>
+                        </div>
+                        <div class="swiper-slide" data-title="City Streets">
+                            <img src="images/other/IMG_8372.JPG" alt="London Cycling 2" class="gallery-img">
+                            <div class="slide-title">City Streets</div>
+                        </div>
+                        <div class="swiper-slide" data-title="Transport Hub">
+                            <img src="images/other/IMG_8377.JPG" alt="London Cycling 3" class="gallery-img">
+                            <div class="slide-title">Transport Hub</div>
+                        </div>
+                        <div class="swiper-slide" data-title="Street View">
+                            <img src="images/other/IMG_8378.JPG" alt="London Cycling 4" class="gallery-img">
+                            <div class="slide-title">Street View</div>
+                        </div>
+                        <div class="swiper-slide" data-title="Station Area">
+                            <img src="images/other/IMG_8404.JPG" alt="London Cycling 5" class="gallery-img">
+                            <div class="slide-title">Station Area</div>
+                        </div>
+                        <div class="swiper-slide" data-title="Railway Bridge">
+                            <img src="images/other/IMG_8414.JPG" alt="London Cycling 6" class="gallery-img">
+                            <div class="slide-title">Railway Bridge</div>
+                        </div>
+                        <div class="swiper-slide" data-title="Underground Entrance">
+                            <img src="images/other/IMG_8434.JPG" alt="London Cycling 7" class="gallery-img">
+                            <div class="slide-title">Underground Entrance</div>
+                        </div>
+                        <div class="swiper-slide" data-title="Historic Building">
+                            <img src="images/other/IMG_8502.JPG" alt="London Cycling 8" class="gallery-img">
+                            <div class="slide-title">Historic Building</div>
+                        </div>
+                        <div class="swiper-slide" data-title="Street Corner">
+                            <img src="images/other/IMG_8538.JPG" alt="London Cycling 9" class="gallery-img">
+                            <div class="slide-title">Street Corner</div>
+                        </div>
+                        <div class="swiper-slide" data-title="Urban Landscape">
+                            <img src="images/other/IMG_8543.JPG" alt="London Cycling 10" class="gallery-img">
+                            <div class="slide-title">Urban Landscape</div>
+                        </div>
+                        <div class="swiper-slide" data-title="Road Junction">
+                            <img src="images/other/IMG_8546.JPG" alt="London Cycling 11" class="gallery-img">
+                            <div class="slide-title">Road Junction</div>
+                        </div>
+                        <div class="swiper-slide" data-title="Canal Approach">
+                            <img src="images/other/IMG_8566.JPG" alt="London Cycling 12" class="gallery-img">
+                            <div class="slide-title">Canal Approach</div>
+                        </div>
+                        <div class="swiper-slide" data-title="Bridge Crossing">
+                            <img src="images/other/IMG_8597.JPG" alt="London Cycling 13" class="gallery-img">
+                            <div class="slide-title">Bridge Crossing</div>
+                        </div>
+                        <div class="swiper-slide" data-title="Riverside Path">
+                            <img src="images/other/IMG_8627.JPG" alt="London Cycling 14" class="gallery-img">
+                            <div class="slide-title">Riverside Path</div>
+                        </div>
+                        <div class="swiper-slide" data-title="Park Gateway">
+                            <img src="images/other/IMG_8655.JPG" alt="London Cycling 15" class="gallery-img">
+                            <div class="slide-title">Park Gateway</div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">Photography by Andrii Kolisnyk</p>
+            <p class="footer-paper">"Speed vs. Sense: The Hidden Logic of Cyclist Routes"</p>
+            <p class="footer-year">2025</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
