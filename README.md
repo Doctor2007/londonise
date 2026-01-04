@@ -1,6 +1,6 @@
 # Speed vs. Sense: The Hidden Logic of Cyclist Routes
 
-A responsive prototype website showcasing photographic documentation of cyclist route choices in London through visual galleries.
+A responsive prototype website (designed with AI) showcasing photographic documentation of cyclist route choices in London through visual galleries.
 
 ## About the Project
 
@@ -116,6 +116,8 @@ The masonry grid automatically adjusts based on screen size:
 
 This website accompanies the research paper "Speed vs. Sense: The Hidden Logic of Cyclist Routes" by Andrii Kolisnyk, exploring how urban infrastructure and environmental factors influence cyclist route selection in London.
 
+The project is inspired by the Copenhagenize project’s work on making cycling infrastructure legible and comparable through clear, visual storytelling.
+
 The photographic documentation allows viewers to qualitatively assess the differences between:
 - Infrastructure-optimized routes (dedicated cycle superhighways)
 - Experience-optimized routes (scenic canal paths and park routes)
@@ -124,12 +126,21 @@ The photographic documentation allows viewers to qualitatively assess the differ
 
 - **Photography & Research**: Andrii Kolisnyk
 - **Web Development**: Static prototype for academic presentation
+- **Inspiration**: Copenhagenize project (https://copenhagenize.eu/) — not affiliated
 - **Year**: 2025
 
 ## License
 
-This is an academic research prototype. All photographs and content are the property of the researcher.
+This project (including photographs, text, and code unless otherwise noted) is licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
+
+- You are free to **share** and **adapt** the material for any purpose, including commercially.
+- You must give **appropriate credit**, provide a link to the license, and indicate if changes were made.
+
+See the full license in [LICENSE](LICENSE).
+
+Suggested attribution:
+"Speed vs. Sense: The Hidden Logic of Cyclist Routes" by Andrii Kolisnyk, licensed under CC BY 4.0.
 
 ---
 
-*For questions about the research or website, please contact the researcher through academic channels.*
+*For questions about the research or website, please contact the researcher through academic channels or email.*
